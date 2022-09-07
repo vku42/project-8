@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto";
+}
+
+body{
+    background-image: url("/images/backcover.svg");
+    background-position: top right;
+    background-size: 120vh;
+    background-repeat: no-repeat;
+
+    
+}
+
+.main-div {
+    padding-left: 13%;
+    padding-right: 5%;
+    
+}
+
+
+/* navigation bar  */
+
+nav {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-items {
+    padding: 0 25%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+ /* main banner */
+
+ .intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 90vh;
+ }
+
+ .imgs-div {
+    position: relative;
+ }
+
+.vector-img {
+    position: absolute;
+    top: 65%;
+}
+
+.imgs-div img[alt="intro-img"]{
+    height: auto;
+}
+ 
+
+/* left part */
+
+.left-section h1 {
+    margin-top: 30%;
+    font-weight: bolder;
+    font-size: 4rem;
+    padding-bottom: 10%;
+    color: #3E4794;
+}
+
+.left-section h4 {
+    color: #3E4794;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+
+}
+
+/* buttons */
+.learn-more-btn {
+    margin-top: 15%;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #965CF2 , #FF8ADC);
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.signin-btn {
+    font-family: sans-serif;
+    flex: 0.5;
+    background-image: linear-gradient(to right, #965CF2 , #FF8ADC);
+    border: none;
+    padding: 0px 0px;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1339px){
+    .learn-more-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    
+    }
+    
+    .signin-btn {
+        font-size: 0.7rem;
+
+    }
+
+    .imgs-div img[alt="intro-img"]{
+        height: auto;
+        width: 500px;
+    }
+
+    .main-div {
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+
+    .nav-items {
+        padding: 0 5%;
+    }   
+}
+
+@media screen and (max-width:730px){
+    .nav-items {
+        display: none;
+    }
+
+    .intro-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+     }
+
+     .left-section h1 {
+        margin-top: 10%;
+    }
+
+    .learn-more-btn {
+        margin-top: 5%;
+
+    }
+
+    .vector-img {
+        width: 0px;
+    }
+
+    .imgs-div img[alt="intro-img"] {
+        height: auto;
+        width: 331px;
+    }
+
+    
+
+}
+
+
+
+
+
+
